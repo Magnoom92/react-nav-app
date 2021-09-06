@@ -14,43 +14,44 @@ class LoginForm extends Component {
 //     errors.password = "Invalid password. Must contain one number.";
 //   }
 
-    validate = () =>{
-        const errors ={};
-        const mailRegex = /^\S+@\S+$/;
-        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+    // validate = () =>{
+    //     const errors ={};
+    //     const mailRegex = /^\S+@\S+$/;
+    //     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
-        // if (mailRegex.test(potato)) {
-        //     console.log('this should show up')
-        // }
-        // if (!mailRegex.test(potato2)) {
-        //     console.log('this should also show up')
-        // }
+    //     // if (mailRegex.test(potato)) {
+    //     //     console.log('this should show up')
+    //     // }
+    //     // if (!mailRegex.test(potato2)) {
+    //     //     console.log('this should also show up')
+    //     // }
         
 
 
 
-        const {account} = this.state;
-        console.log(account.email); 
-        if (!new RegExp(mailRegex).test(account.email))
+    //     const {account} = this.state;
+    //     console.log(account.email); 
+    //     if (!new RegExp(mailRegex).test(account.email))
 
-          errors.email='Email format is incorrect, please check your email.';
+    //       errors.email='Email format is incorrect, please check your email.';
          
-        //   switch for rules
-        if (!account.password.match(passwordRegex))
-          errors.password='Password required needs a minimum eight characters, at least one letter, one number and one special character:.';
+    //     //   switch for rules
+    //     if (!account.password.match(passwordRegex))
+    //       errors.password='Password required needs a minimum eight characters, at least one letter, one number and one special character:.';
 
-        return Object.keys(errors).lenght === 0 ? null : errors;
-    };
+    //     return Object.keys(errors).lenght === 0 ? null : errors;
+    // };
 
   handleSubmit = e =>{
       e.preventDefault(); // Calling the server
-      const errors = this.validate();
-      console.log(errors);
-      this.setState({errors});
-      if (errors)
+    //   const errors = this.validate();
+    //   console.log(errors);
+    //   this.setState({errors});
+    //   if (errors)
     //   creat element - sub input rosu cu mesajul dorit
+    console.log('submitted')
        return;
-       console.log('submitted')
+       
 
       
        
@@ -78,9 +79,8 @@ class LoginForm extends Component {
                     autoFocus  
                     type="email"  
                     className="form-control" 
+                    placeholder="Enter email"
                     required/>
-
-
                 </div>
                     
                 <div className="form-group">
@@ -90,6 +90,7 @@ class LoginForm extends Component {
                     <input id="password"
                      type="password" 
                      className="form-control"
+                     placeholder="Password"
                      required />
 
                 </div>

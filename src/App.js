@@ -42,52 +42,8 @@ class App extends Component {
 }
 
 
-
-
-
-
-
-// class App extends Component {
-  
-//   render() { 
-//     return ( 
-//      <div>
-//        <NavBar/>
-//        <div className="content">
-//          <Route path="movies" component={Movies}/>
-//          <Route path="contactUs" component={ContactUs}/>
-//          <Route path="home" component={Home}/>
-//          <Route path="list" component={List}/>
-        
-//        </div>
-//      </div>
-//      );
-//   }
-// };
- 
 export default App;
 
-
-{/* <main className="container">
-       
-       <h2>
-         <ContactUs/>
-       </h2>
-       <h3>
-         <Home/>
-       </h3>
-       <h4>
-         <List/>
-       </h4>
-       <h5>
-         <NavBar/>
-       </h5>
-       <h1>
-         <Movies/>
-       </h1>
-
-     
-     </main> */}
 
 
 

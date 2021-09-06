@@ -29,7 +29,7 @@ const NavBar = props => {
             Movies
           </NavLink>        
           <NavLink className="nav-item nav-link" to="/list">
-            List
+            Add restaurants
           </NavLink>
           <NavLink className="nav-item nav-link" to="/restaurants">
             Restaurants
@@ -50,40 +50,3 @@ const NavBar = props => {
 
 export default NavBar;
 
-
-
-{/* <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/contactus">ContactUs</Link>
-      </li>
-      <li>
-        <Link to="/list">List</Link>
-      </li>
-      <li>
-        <Link to="/Movies">Movies</Link>
-      </li>
-      <li>
-        <Link to="/Restaurants">Restaurants</Link>
-      </li>
-    </ul>
-  ///////////////////////////////
-  ///////////////////////////////
-  <NavLink className="nav-item nav-link" to="/movies">
-            Movies
-          </NavLink>        
-          <NavLink className="nav-item nav-link" to="/list">
-            List
-          </NavLink>
-          <NavLink className="nav-item nav-link" to="/restaurants">
-            Restaurants
-          </NavLink>
-          <NavLink className="nav-item nav-link" to="/contactus">
-            Contact us
-          </NavLink>
-
-
-  
-  */}
